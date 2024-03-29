@@ -1,5 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body, button, textarea{
+    font-family: "Roboto", sans-serif;
+    color: #37003C;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    height: 80px;
+    display: flex;
+    padding: 15px 39px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header--logo {
+    height: 37px;
+    width: 133px;
+}
+
+nav > ul{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav > ul > li{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    margin-right: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #37003C;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+}
+
+a:link{
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* .container{
+    padding: 0 30px;
+} */
+
+h2{
+    font-weight: 500;
+    margin: 200px 0 .5em;
+    font-family: Roboto;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: -0.05em;
+}
+
+.hero--img-container{
+    width: 100%;
+    height: 700px;
+    background-image: url('../assets/home.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.hero--text-container{
+    display: flex;
+    margin-top: 30px;
+    height: 300px;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.hero--text-div{
+ width: 350px;
+}
+
+.hero--text-div2{
+    margin-left: 30px;
+   }
+
+.hero--text-div3{
+    margin: 0 60px 0 auto;
+   }
+
+.hero--text , .contact--input, .container--button, textarea, .team--info{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.025em;
+}
+
+.footer{
+    height: 300px;
+    color: white;
+    background-color: #37003C;
+}
+
+.footer--container{
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-around;
+}
+
+.footer--logo{
+    width: 133px;
+    height: 37px;
+}
+
+/* ---services--- */
+
+.services--container{
+    display: flex;
+    flex-direction: column;
+    height: 1668px;
+    margin-bottom: 30px;
+}
+
+.services--service{
+    display: flex;
+    width: 100%;
+    height: 556px;
+    background-position: center;
+    background-size: cover;
+    padding: 2em;
+}
+
+.service--h3{
+    margin-top: auto;
+    color: white;
+    font-size: 160px;
+    font-weight: 500;
+    line-height: 146px;
+    letter-spacing: -0.05em;
+}
+
+.banner1{
+    background-image: url('../assets/banner1.png');
+}
+
+.banner2{
+    background-image: url('../assets/banner2.png');
+}
+
+.banner3{
+    background-image: url('../assets/banner3.png');
+}
+
+/* ---contact--- */
+
+.contact--form-container{
+    height: 1000px;
+    background-color: #37003C;
+    display: flex;
+    justify-content: center;
+}
+
+.contact--form{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.contact--input{
+    width: 100%;
+    height: 102px;
+    padding: 1em;
+}
+
+.light{
+    background-color: white;
+    color: #37003C;
+}
+
+.contact--button{
+    width: 240px;
+    height: 93px;
+    background: #FFF422;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: -0.025em;
+    text-decoration: underline;
+}
+
+textarea{
+    height: 446px;
+    padding: 1em;
+}
+
+/* ---team--- */
+
+.team--div-container{
+    display: flex;
+    height: 2500px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team--member-images-container1, .team--member-images-container2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team--member-images-container1{
+    justify-content: space-between;
+}
+
+.team--member-images-container2{
+    height: 70%;
+}
+
+.team--member-container{
+    height: 750px;
+    width: 720px;
+}
+
+.team--member-image{
+    width: 100%;
+}
+
+.team--info-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*---partners---*/
+
+.partners--image{
+    width: 100%;
+    margin-bottom: 50px;
 }
